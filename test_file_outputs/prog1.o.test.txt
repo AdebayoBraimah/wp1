@@ -1,0 +1,56 @@
+
+/shared/cse502/tests/wp1/prog1.o:     file format elf64-littleriscv
+
+
+Disassembly of section .text:
+
+0000000000000000 <.text>:
+   0:	fe010113          	addi	sp,sp,-32
+   4:	00113c23          	sd	ra,24(sp)
+   8:	00813823          	sd	s0,16(sp)
+   c:	02010413          	addi	s0,sp,32
+  10:	fea42623          	sw	a0,-20(s0)
+  14:	feb43023          	sd	a1,-32(s0)
+  18:	000007b7          	lui	a5,0x0
+  1c:	00078513          	mv	a0,a5
+  20:	00000317          	auipc	t1,0x0
+  24:	000300e7          	jalr	t1
+  28:	00000793          	li	a5,0
+  2c:	00078513          	mv	a0,a5
+  30:	01813083          	ld	ra,24(sp)
+  34:	01013403          	ld	s0,16(sp)
+  38:	02010113          	addi	sp,sp,32
+  3c:	00008067          	ret
+
+Disassembly of section .rodata:
+
+0000000000000000 <.rodata>:
+   0:	6548                	ld	a0,136(a0)
+   2:	6c6c                	ld	a1,216(s0)
+   4:	6f77206f          	j	0x72efa
+   8:	6c72                	ld	s8,280(sp)
+   a:	2164                	fld	fs1,192(a0)
+	...
+
+Disassembly of section .comment:
+
+0000000000000000 <.comment>:
+   0:	4700                	lw	s0,8(a4)
+   2:	203a4343          	fmadd.s	ft6,fs4,ft3,ft4,rmm
+   6:	4728                	lw	a0,72(a4)
+   8:	554e                	lw	a0,240(sp)
+   a:	2029                	0x2029
+   c:	2e302e37          	lui	t3,0x2e302
+  10:	2030                	fld	fa2,64(s0)
+  12:	3032                	fld	ft0,296(sp)
+  14:	3731                	addiw	a4,a4,-20
+  16:	3130                	fld	fa2,96(a0)
+  18:	3031                	0x3031
+  1a:	2820                	fld	fs0,80(s0)
+  1c:	7865                	lui	a6,0xffff9
+  1e:	6570                	ld	a2,200(a0)
+  20:	6972                	ld	s2,280(sp)
+  22:	656d                	lui	a0,0x1b
+  24:	746e                	ld	s0,248(sp)
+  26:	6c61                	lui	s8,0x18
+  28:	0029                	0x29
